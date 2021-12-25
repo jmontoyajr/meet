@@ -152,7 +152,7 @@ module.exports.getCalendarEvents = async (event) => {
     );
 
   })
-    .then((token) => {
+    .then((results) => {
       // Respond with OAuth token 
       return {
         statusCode: 200,
@@ -174,5 +174,5 @@ module.exports.getCalendarEvents = async (event) => {
       };
     });
 
-}
+};
 
